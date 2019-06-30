@@ -3,10 +3,10 @@ const app = express()
 const bodyParser = require('body-parser');
 const Twit = require('twit');
 const T = new Twit({
-  consumer_key: "Qy0YdA1OoHevI4jvF9Ou2l4zp",
-  consumer_secret: "U2ceb7ilFJqb5c9dJRLG34bbdjN88Qo3RwUzvTG6VPMJCNx1mO",
-  access_token: "1128149585589751808-WLKkm2bS3xALBLz1EeuUMDQkv2uQM2",
-  access_token_secret: "0XeFjoegnGZakDHsoXnlWghomRPlgwwzCPpPTLAQzXFv7",
+  consumer_key: "CONSUMER_KEY",
+  consumer_secret: "CONSUMER_SECRET",
+  access_token: "ACCESS_TOKEN",
+  access_token_secret: "ACCESS_TOKEN_SECRET",
 })
 var htmlData = [];
 
