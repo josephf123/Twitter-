@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+
+        h1{
+            font-size: 34px;
+        }
+        body{
+            background-color: #8ACEE3
+        }
+        div.hithere{
+            position: relative
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="hithere">
+        <form action="/" method="POST">
+            <input name="handle" type="text" class="ghost-input" placeholder="Enter a Twitter handle" style="border: 1px; dotted #999;
+            border-radius: ; -webkit-appearance: none; width: 87%; font-size: 60px;" required>
+            <input type="submit" class="ghost-button" value="Find" style="border: 1px; dotted #999;
+            border-radius: ; -webkit-appearance: none; width:12%; font-size: 60px;">
+        </form>
+        <form action="/twitter" method="POST">
+            <input name="show" type="submit" value="show" style="border: 1px; dotted #999;
+            border-radius: ; -webkit-appearance: none; position: absolute; left: 50%; font-size: 60px; bottom:-150%">
+        </form>
+    </div>
+
+</body>
