@@ -36,7 +36,7 @@ app.post("/", async function (req,res) {
 
 function render(res){
     res.render('new',{array: htmlData});
-    console.log("HOORAYY!!!")
+    htmlData = [];
 }
 
 
