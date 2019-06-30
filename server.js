@@ -39,9 +39,6 @@ function render(res){
     console.log("HOORAYY!!!")
 }
 
-app.post("/twitter", function (req,res){
-    res.render('new', {array: htmlData})
-})
 
 
 app.listen(3000, function () {
