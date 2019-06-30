@@ -3,10 +3,10 @@ const app = express()
 const bodyParser = require('body-parser');
 const Twit = require('twit');
 const T = new Twit({
-  consumer_key: "CONSUMER_KEY",
-  consumer_secret: "CONSUMER_SECRET",
-  access_token: "ACCESS_TOKEN",
-  access_token_secret: "ACCESS_TOKEN_SECRET",
+  consumer_key: "Qy0YdA1OoHevI4jvF9Ou2l4zp",
+  consumer_secret: "U2ceb7ilFJqb5c9dJRLG34bbdjN88Qo3RwUzvTG6VPMJCNx1mO",
+  access_token: "1128149585589751808-WLKkm2bS3xALBLz1EeuUMDQkv2uQM2",
+  access_token_secret: "0XeFjoegnGZakDHsoXnlWghomRPlgwwzCPpPTLAQzXFv7",
 })
 var htmlData = [];
 
@@ -23,15 +23,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post("/", async function (req,res) {
     try{
         var name = req.body.handle;
-        console.log(name)
+        console.log(name);
         result = await twet(name);
-        console.log("The thing above is val")
+        console.log("The thing above is val");
+        setTimeout(render, 15000, res);
     }
     catch(error){
         console.log(error)
     }
     
 })
+
+function render(res){
+    res.render('new',{array: htmlData});
+    console.log("HOORAYY!!!")
+}
 
 app.post("/twitter", function (req,res){
     res.render('new', {array: htmlData})
