@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
 const Twit = require('twit');
+const y = require('ejs');
 const T = new Twit({
   consumer_key: "Qy0YdA1OoHevI4jvF9Ou2l4zp",
   consumer_secret: "U2ceb7ilFJqb5c9dJRLG34bbdjN88Qo3RwUzvTG6VPMJCNx1mO",
@@ -26,7 +27,7 @@ app.post("/", async function (req,res) {
         console.log(name);
         result = await twet(name);
         console.log("The thing above is val");
-        setTimeout(render, 15000, res);
+        setTimeout(render, 30000, res);
     }
     catch(error){
         console.log(error)

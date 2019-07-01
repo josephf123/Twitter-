@@ -13,6 +13,10 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "pkg": "^4.4.0",
     "twit": "^2.2.11"
+  },
+  "pkg": {
+    "assets": ["views/index", "views/new"]
   }
 }
