@@ -1,4 +1,4 @@
-# Twitter-
+# Twitter-Bot
 Allows user to find top tweets from and twitter account
 
 An old program that is now depreciated (due to Twitter's updated API) that uses Node.js as well as the Twitter API in order to scrape a user's account and then sort their posts by the amount of likes
